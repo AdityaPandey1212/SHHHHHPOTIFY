@@ -34,7 +34,7 @@ Welcome to SHHHHHPOTIFY! This personal project is a web application designed to 
 -Configure your API keys:
 Set up your Spotify and rapidApi keys (Spotify)[https://developer.spotify.com/] and (RapidAPI)[https://rapidapi.com/ytjar/api/youtube-mp36]
 
-#Running the Application
+## Running the Application
 - Start the backend server:
       node /index.js
 - Start the front-end (Html landing/index.html)
