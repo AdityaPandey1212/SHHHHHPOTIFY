@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.brandName {
+    color: #18d860;
+}
+
+.fixed {
+    margin-bottom: 0;
+    z-index: -10;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: -1px;
+    background-image: url(../images/background.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: circs 15s linear infinite;
+    filter: blur(5px);
+}
+
+#linkIP {
+    margin-top: 40px;
+    width: 60%;
+    height: 60px;
+    border: none;
+    border-bottom: 5px solid #002f47;
+    outline: none;
+    background: none;
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.fixed2 {
+    margin-bottom: 0;
+    z-index: -10;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: -1px;
+    background-image: url(../images/main_bg1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: circs 15s linear infinite;
+}
+
+@keyframes circs {
+    0% {
+        transform: scale(1.2);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    margin: 0px 10px;
+}
+
+.nav-link,
+.navbar-brand {
+    color: white !important;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 0px 10px;
+    transition: 0.25s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #18d860 !important;
+}
+
+.navbar {
+    background-color: transparent !important;
+    padding-top: 10px;
+}
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler:focus {
+    outline: none !important;
+}
+
+.jumbotron {
+    margin: 100px 65px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron h1 {
+    width: 75%;
+    text-align: center;
+}
+
+.jumbotron p {
+    width: 70%;
+    text-align: center;
+    font-size: 20px;
+    margin: 40px;
+    color: white;
+}
+
+.btn {
+    font-size: 20px;
+    background-color: #18d860;
+    transition: 0.5s ease-in;
+    padding: 10px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: fit-content;
+    margin-bottom: 40px;
+}
+
+.centerElement {
+    position: static !important;
+    animation: none;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #002f47;
+}
+
+.steps {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.card {
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s ease-in-out;
+    padding: 10px;
+    margin: 30px 30px 0 30px;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 30px 0px #18d860;
+    background-color: rgb(255, 255, 255);
+
+    img {
+        transform: scale(1.05);
+    }
+
+    .card-title,
+    p {
+        color: #002f47 !important;
+    }
+}
+
+.card-body {
+    margin: 10px;
+    text-align: center;
+    padding: 0;
+}
+
+.card img {
+    margin-top: 20px;
+    height: 150px;
+    width: 200px;
+    transition: .25s ease-in-out;
+}
+
+.card-text {
+    color: #18d860 !important;
+}
+
+.APIcontent {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding-bottom: 100px;
+    width: 90%;
+}
+
+.title img {
+    margin: 0 30px !important;
+}
+
+.title {
+    width: 100%;
+    margin: 20px;
+}
+
+.title,
+.tit {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#songList {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#songList img {
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn2 {
+    position: static;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #18d860;
+    animation: none;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.songListContent {
+    padding: 10px;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px;
+    box-shadow: #002034 0px 2px 8px 0px;
+}
+
+@keyframes breathing {
+    0% {
+        transform: scale(0.9);
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.9;
+        transform: scale(.9);
+    }
+}
+
+@media (max-width: 880px) {
+    .nav-link {
+        display: flex;
+        justify-content: center;
+        background-color: rgb(0, 18, 32, 0.20);
+    }
+
+}
